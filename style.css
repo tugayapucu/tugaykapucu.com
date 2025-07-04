@@ -10,11 +10,9 @@ body {
 }
 
 .hero {
-    background: linear-gradient(to right, #0A2342, #174276), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    position: relative;
+  background: linear-gradient(120deg, #f0f4f8, #ffffff);
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 
 .hero::before {
