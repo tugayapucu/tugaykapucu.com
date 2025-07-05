@@ -11,7 +11,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(to right, #f9fafe, #eef3f9);
+  background: linear-gradient(to right, #fff5f5, #ffe8e8);
   padding-top: 120px;
   padding-bottom: 80px;
 }
@@ -43,10 +43,6 @@ body {
   border-radius: 50%;
   margin-bottom: 20px;
   border: 4px solid white;
-}
-
-.hero img:hover {
-  transform: scale(1.03);
 }
 
 .section-title {
@@ -145,6 +141,14 @@ footer {
     max-width: 960px;
 }
 
+.container-lg {
+  max-width: 1140px;
+}
+
 .bg-light {
     background-color: var(--section-bg) !important;
+}
+
+.hero .hero-illustration {
+  margin-left: 100px; 
 }
