@@ -160,3 +160,8 @@ footer {
 .hero .hero-illustration {
   margin-left: 100px; 
 }
+
+#about p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
