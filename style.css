@@ -114,6 +114,14 @@ footer {
     font-weight: 600;
 }
 
+.navbar-brand img {
+  transition: transform 0.2s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
 .nav-link {
     margin-left: 10px;
 }
