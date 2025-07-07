@@ -60,17 +60,36 @@
   <section id="about">
     <div class="container">
       <h2 class="section-title text-center">About Me</h2>
-      <div class="row align-items-center justify-content-center">
-        <div class="col-md-3 text-center mb-4 mb-md-0">
-          <img src="avatar2.jpeg" alt="Tugay Kapucu" class="img-fluid rounded-circle shadow" style="width: 180px; height: 180px; object-fit: cover;" />
+      <div class="row align-items-start">
+        <!-- Profile Photo: Left aligned with section -->
+        <div class="col-md-3 text-md-start text-center mb-4 mb-md-0">
+          <img src="avatar2.jpeg" alt="Tugay Kapucu" class="img-fluid rounded-circle shadow profile-img" />
         </div>
-        <div class="col-md-8">
+
+        <!-- Text and Education -->
+        <div class="col-md-9">
           <p>
-            Hi, I’m Tugay — a software developer passionate about building impactful digital products. Currently at <strong>Siemens</strong>, I help design and implement robust, scalable industrial software. Whether it’s full-stack development, AI systems, or automation tooling, I’m driven by the pursuit of clean architecture and purposeful innovation.
+            Hi, I’m Tugay — a software developer passionate about building impactful digital products.
+            Currently at <strong>Siemens</strong>, I help design and implement robust, scalable industrial software.
+            Whether it’s full-stack development, AI systems, or automation tooling, I’m driven by the pursuit of
+            clean architecture and purposeful innovation.
           </p>
-          <p>
-            <strong>Education:</strong> Double Major in <strong>Management Engineering</strong> and <strong>Computer Engineering</strong> at Istanbul Technical University (<em>Graduated with 3.89 GPA</em>). High school diploma from <strong>Robert College of Istanbul</strong>.
-          </p>
+
+          <!-- Education Stepper Centered -->
+          <div class="d-flex justify-content-center gap-5 flex-wrap mt-4">
+            <div class="step d-flex flex-column align-items-center">
+              <img src="istanbul-amerikan-robert-lisesi-robert-college-seeklogo.png" alt="Robert College" class="edu-logo mb-2" />
+              <div class="edu-title">Robert College</div>
+              <div class="edu-subtitle">High School Diploma</div>
+            </div>
+            <div class="step d-flex flex-column align-items-center">
+              <img src="İTÜ_logo.png" alt="ITU" class="edu-logo mb-2" />
+              <div class="edu-title text-center">Istanbul Technical University</div>
+              <div class="edu-subtitle text-center">
+                Double Major<br />Management &<br />Computer Engineering
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
