@@ -204,3 +204,34 @@ img.rounded-circle {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   margin-top: -10px;
 }
+
+.ability-logo {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.ability-logo:hover {
+  transform: scale(1.2);
+}
+
+.ability-logo[title]::after {
+  content: attr(title);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.ability-logo:hover::after {
+  opacity: 1;
+}
