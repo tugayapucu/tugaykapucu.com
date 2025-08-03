@@ -235,3 +235,51 @@ img.rounded-circle {
 .ability-logo:hover::after {
   opacity: 1;
 }
+
+.timeline {
+  position: relative;
+  margin-left: 30px;
+  padding-left: 30px;
+  border-left: 3px solid #007bff33;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #007bff33;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #007bff33;
+}
+
+.timeline-item img {
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.timeline-item h5 {
+  font-weight: 600;
+}
+
+.timeline-item p {
+  margin-bottom: 0.5rem;
+}
