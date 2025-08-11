@@ -283,3 +283,77 @@ img.rounded-circle {
 .timeline-item p {
   margin-bottom: 0.5rem;
 }
+
+.timeline-container {
+  position: relative;
+  padding-left: 40px;
+  margin-top: 2rem;
+  border-left: 2px solid #dee2e6;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #dee2e6;
+}
+
+.timeline-block {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.timeline-icon {
+  background: white;
+  border: 2px solid #dee2e6;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  padding: 6px;
+  margin-right: 20px;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.timeline-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.timeline-content {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  max-width: 700px;
+}
+
+.timeline-content h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content p {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+}
+
+
+@media (max-width: 768px) {
+  .timeline-block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-icon {
+    margin-bottom: 10px;
+  }
+}
