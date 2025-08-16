@@ -485,3 +485,192 @@ img.rounded-circle {
   70%  { box-shadow: 0 0 0 14px rgba(56,189,248,0); }
   100% { box-shadow: 0 0 0   0 rgba(56,189,248,0); }
 }
+
+/* Make the whole section a bit wider on large screens */
+#experience .container-lg {
+  max-width: 1140px; /* you already define this; keeping it here for clarity */
+}
+
+/* Ensure cards don’t collapse to min-content */
+.tl-card {
+  width: clamp(320px, 42vw, 560px);   /* readable range */
+  min-width: 320px;                   /* hard floor to prevent skinny cards */
+}
+
+/* On mobile, just fill the row */
+@media (max-width: 991.98px) {
+  .tl-card {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Make the badges/logos bigger and keep them crisp */
+.tl-badge {
+  width: 80px;
+  height: 80px;
+}
+.tl-badge img {
+  width: 74%;
+  height: 74%;
+}
+
+/* Center the spine in desktop layout precisely */
+@media (min-width: 992px) {
+  .timeline-pro {
+    grid-template-columns: 1fr 84px 1fr; /* room for 80px badge + breathing */
+  }
+  .timeline-pro__spine {
+    left: calc(50% - 2px); /* 4px spine centered */
+  }
+
+  /* Stretch cards to their side and keep nice spacing */
+  .tl-item:nth-child(odd) .tl-card  { margin-left: 18px; }
+  .tl-item:nth-child(even) .tl-card { margin-right: 18px; }
+
+  /* Optional: align cards to start so they don't float oddly */
+  .tl-item:nth-child(odd)  .tl-card { justify-self: start; }
+  .tl-item:nth-child(even) .tl-card { justify-self: end; }
+}
+
+/* Slightly bigger text inside the cards for readability if you like */
+.tl-card p { line-height: 1.5; }
+
+/* Keep the glow subtle (smaller ring) */
+.tl-badge::after {
+  animation: tl-glow 2.4s ease-out infinite;
+}
+@keyframes tl-glow {
+  0%   { box-shadow: 0 0 0 0 rgba(56,189,248,.35); }
+  70%  { box-shadow: 0 0 0 12px rgba(56,189,248,0); }
+  100% { box-shadow: 0 0 0 0 rgba(56,189,248,0); }
+}
+
+/* ========= Modern, robust timeline ========= */
+.timeline-pro {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 84px 1fr;  /* left | spine | right */
+  row-gap: 32px;                        /* space between rows (items) */
+  column-gap: 28px;
+  align-items: start;
+  margin-top: 10px;
+}
+
+/* Centered vertical spine */
+.timeline-pro__spine {
+  grid-column: 2 / 3;
+  position: relative;
+}
+.timeline-pro__spine::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  bottom: -12px;
+  left: calc(50% - 2px);
+  width: 4px;
+  background: linear-gradient(180deg, rgba(56,189,248,.15), rgba(56,189,248,.35));
+  border-radius: 2px;
+}
+
+/* Let each timeline row place its children into the grid */
+.tl-item {
+  display: contents; /* card + badge share the same implicit row */
+}
+
+/* Alternate sides deterministically */
+.tl-item:nth-child(odd)  .tl-card { grid-column: 1 / 2; justify-self: end; }
+.tl-item:nth-child(odd)  .tl-badge{ grid-column: 2 / 3; justify-self: center; }
+
+.tl-item:nth-child(even) .tl-card { grid-column: 3 / 4; justify-self: start; }
+.tl-item:nth-child(even) .tl-badge{ grid-column: 2 / 3; justify-self: center; }
+
+/* Cards look & feel */
+.tl-card {
+  width: 100%;
+  max-width: 560px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow:
+    0 10px 30px rgba(2, 6, 23, 0.04),
+    0 2px 6px rgba(2, 6, 23, 0.06);
+  border: 1px solid rgba(2, 6, 23, .06);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.tl-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 40px rgba(2, 6, 23, 0.08),
+    0 4px 10px rgba(2, 6, 23, 0.08);
+  border-color: rgba(56,189,248, .35);
+}
+.tl-card p { margin-bottom: 0.5rem; line-height: 1.55; }
+
+/* Badges (company logos) */
+.tl-badge {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow:
+    0 10px 30px rgba(2, 6, 23, 0.04),
+    0 2px 6px rgba(2, 6, 23, 0.06);
+  border: 1px solid rgba(2, 6, 23, .06);
+  display: grid;
+  place-items: center;
+  position: relative;
+  z-index: 1;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.tl-badge img {
+  width: 66%;
+  height: 66%;
+  object-fit: contain;
+  filter: saturate(.95) contrast(1.05);
+}
+.tl-badge:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 14px 36px rgba(2, 6, 23, 0.08),
+    0 4px 10px rgba(2, 6, 23, 0.08),
+    0 0 0 6px rgba(56,189,248,.08);
+}
+
+/* Connector from spine to card (little elbow line) */
+.tl-item:nth-child(odd)  .tl-card::before,
+.tl-item:nth-child(even) .tl-card::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  width: 28px;
+  height: 14px;
+  background: transparent;
+  border-top: 2px solid rgba(56,189,248,.35);
+}
+.tl-item:nth-child(odd)  .tl-card { position: relative; margin-right: 6px; }
+.tl-item:nth-child(even) .tl-card { position: relative; margin-left:  6px; }
+
+.tl-item:nth-child(odd)  .tl-card::before {
+  right: -34px;
+  border-right: 2px solid rgba(56,189,248,.35);
+  border-top-right-radius: 8px;
+}
+.tl-item:nth-child(even) .tl-card::before {
+  left: -34px;
+  border-left: 2px solid rgba(56,189,248,.35);
+  border-top-left-radius: 8px;
+}
+
+/* Responsive: single column on small screens */
+@media (max-width: 991.98px) {
+  .timeline-pro {
+    grid-template-columns: 28px 1fr;  /* spine | full card */
+    column-gap: 16px;
+  }
+  .timeline-pro__spine { grid-column: 1 / 2; }
+  .tl-badge { grid-column: 1 / 2; justify-self: center; }
+  .tl-card  { grid-column: 2 / 3; justify-self: stretch; max-width: none; }
+  .tl-card::before { display: none; }
+}
+
