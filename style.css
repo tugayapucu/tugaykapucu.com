@@ -149,3 +149,58 @@ img.rounded-circle { border: 5px solid #fff; box-shadow: 0 6px 20px rgba(0,0,0,.
   .xp-item { grid-template-columns: 56px 1fr; }
   .xp-logo { width: 56px; height: 56px; }
 }
+
+/* ---------- CONTACT ICON CARDS ---------- */
+.contact-icons{
+  display:flex;
+  gap:24px;
+  flex-wrap:wrap;
+  align-items:stretch;
+}
+
+.ci-btn{
+  flex:1 1 260px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:14px 16px;
+  background:#fff;
+  border:1px solid rgba(2,6,23,.08);
+  border-radius:14px;
+  box-shadow:0 10px 30px rgba(2,6,23,.04), 0 2px 6px rgba(2,6,23,.06);
+  text-decoration:none;
+  color:#0f172a; /* slate-900 */
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background-color .18s ease;
+}
+.ci-btn:hover{
+  transform:translateY(-2px);
+  border-color:var(--accent);
+  box-shadow:0 18px 40px rgba(2,6,23,.08), 0 4px 10px rgba(2,6,23,.08);
+}
+
+.ci-btn img{
+  width:36px; height:36px; display:block;
+  filter:saturate(.98) contrast(1.05);
+}
+
+.ci-text span{
+  display:block;
+  font-weight:600;
+  line-height:1.2;
+}
+.ci-text small{
+  display:block;
+  color:#6b7280; /* slate-500 */
+  margin-top:2px;
+  font-size:.95rem;
+}
+
+.ci-btn:hover .ci-text span{
+  color:var(--accent);
+}
+
+/* Small screens: tighten spacing a bit */
+@media (max-width: 575.98px){
+  .contact-icons{ gap:16px; }
+  .ci-btn{ flex:1 1 100%; }
+}
