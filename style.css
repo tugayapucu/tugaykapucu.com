@@ -94,113 +94,58 @@ img.rounded-circle { border: 5px solid #fff; box-shadow: 0 6px 20px rgba(0,0,0,.
 }
 .ability-logo:hover::after { opacity: 1; }
 
-/* ---------- (Legacy simple timeline styles kept but unused) ---------- */
-.timeline { position: relative; margin-left: 30px; padding-left: 30px; border-left: 3px solid #007bff33; }
-.timeline::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: #007bff33; }
-.timeline-item { position: relative; margin-bottom: 40px; }
-.timeline-item::before {
-  content: ""; position: absolute; left: -34px; top: 5px; width: 16px; height: 16px; background: #007bff;
-  border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 2px #007bff33;
-}
-.timeline-item img { max-height: 60px; object-fit: contain; }
-.timeline-item h5 { font-weight: 600; }
-.timeline-item p { margin-bottom: .5rem; }
-
 /* =========================================================
-   MODERN ALTERNATING TIMELINE (no 'display: contents', no extra spine div)
+   EXPERIENCE — Simple, reliable two-column resume list
    ========================================================= */
-.timeline-pro {
-  position: relative;
+.xp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.xp-item {
   display: grid;
-  row-gap: 32px;               /* spacing between items */
-  margin-top: 10px;
+  grid-template-columns: 84px 1fr;   /* fixed logo column + flexible content */
+  column-gap: 20px;
+  align-items: center;               /* vertically centers the card with the logo */
 }
 
-/* Draw the vertical spine from the container itself */
-.timeline-pro::before {
-  content: "";
-  position: absolute;
-  top: 0; bottom: 0;
-  left: 50%;
-  width: 4px;
-  transform: translateX(-50%);
-  background: linear-gradient(180deg, rgba(56,189,248,.15), rgba(56,189,248,.35));
-  border-radius: 2px;
-}
-
-/* Each item is its own 3-column grid row */
-.tl-item {
+.xp-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid rgba(2,6,23,.08);
+  box-shadow: 0 10px 30px rgba(2,6,23,.04), 0 2px 6px rgba(2,6,23,.06);
   display: grid;
-  grid-template-columns: 1fr 84px 1fr;   /* left | badge | right */
-  align-items: start;
-  column-gap: 28px;
+  place-items: center;
+  overflow: hidden;
+}
+.xp-logo img {
+  width: 66%;
+  height: 66%;
+  object-fit: contain;
+  filter: saturate(.95) contrast(1.05);
 }
 
-/* Badge (logo) */
-.tl-badge {
-  grid-column: 2;
-  justify-self: center;
-  width: 80px; height: 80px; border-radius: 50%; background: #fff;
+.xp-card {
+  background: #fff;
+  border: 1px solid rgba(2,6,23,.08);
+  border-radius: 14px;
+  padding: 18px 20px;
   box-shadow: 0 10px 30px rgba(2,6,23,.04), 0 2px 6px rgba(2,6,23,.06);
-  border: 1px solid rgba(2,6,23,.06);
-  display: grid; place-items: center; position: relative; z-index: 1;
-  transition: transform .22s ease, box-shadow .22s ease;
-}
-.tl-badge img { width: 66%; height: 66%; object-fit: contain; filter: saturate(.95) contrast(1.05); }
-.tl-badge:hover {
-  transform: scale(1.05);
-  box-shadow: 0 14px 36px rgba(2,6,23,.08), 0 4px 10px rgba(2,6,23,.08), 0 0 0 6px rgba(56,189,248,.08);
-}
-
-/* Card */
-.tl-card {
-  width: 100%; max-width: 560px; background: #fff; border-radius: 14px; padding: 18px 20px;
-  box-shadow: 0 10px 30px rgba(2,6,23,.04), 0 2px 6px rgba(2,6,23,.06);
-  border: 1px solid rgba(2,6,23,.06);
   transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
 }
-.tl-card:hover {
+.xp-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 40px rgba(2,6,23,.08), 0 4px 10px rgba(2,6,23,.08);
   border-color: rgba(56,189,248,.35);
 }
-.tl-card p { margin-bottom: .5rem; line-height: 1.55; }
+.xp-card h5 { margin-bottom: 4px; font-weight: 600; }
+.xp-dates { margin: 0 0 8px; color: #6b7280; font-size: 0.95rem; }
 
-/* Alternate sides (now simple because there is no extra spine element) */
-.tl-item:nth-child(odd)  .tl-card { grid-column: 3; justify-self: start; }
-.tl-item:nth-child(even) .tl-card { grid-column: 1; justify-self: end;   }
-
-/* Connector drawn from the badge */
-.tl-badge::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 44px;
-  height: 2px;
-  background: rgba(56,189,248,.35);
-  border-radius: 2px;
-}
-.tl-item:nth-child(odd)  .tl-badge::after { right: -44px; } /* to right card */
-.tl-item:nth-child(even) .tl-badge::after { left:  -44px; } /* to left  card */
-
-/* Responsive: single column (spine moved left, cards full width) */
-@media (max-width: 991.98px) {
-  .timeline-pro::before {
-    left: 28px;
-    transform: none;
-  }
-  .tl-item {
-    grid-template-columns: 56px 1fr;    /* badge | card */
-    column-gap: 16px;
-  }
-  .tl-badge { grid-column: 1; justify-self: center; }
-  .tl-badge::after { display: none; }
-  .tl-card  { grid-column: 2; justify-self: stretch; max-width: none; }
-}
-
-/* (small legacy helpers) */
-@media (max-width: 768px) {
-  .timeline-block { flex-direction: column; align-items: flex-start; }
-  .timeline-icon { margin-bottom: 10px; }
+/* Mobile: stack nicely */
+@media (max-width: 575.98px) {
+  .xp-item { grid-template-columns: 56px 1fr; }
+  .xp-logo { width: 56px; height: 56px; }
 }
