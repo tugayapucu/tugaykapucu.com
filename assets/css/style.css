@@ -143,6 +143,14 @@ img.rounded-circle { border: 5px solid #fff; box-shadow: 0 6px 20px rgba(0,0,0,.
 }
 .xp-card h5 { margin-bottom: 4px; font-weight: 600; }
 .xp-dates { margin: 0 0 8px; color: #6b7280; font-size: 0.95rem; }
+.xp-points {
+  margin: 0;
+  padding-left: 18px;
+  color: #0f172a;
+  line-height: 1.6;
+}
+.xp-points li { margin-bottom: 6px; }
+.xp-points li:last-child { margin-bottom: 0; }
 
 /* Mobile: stack nicely */
 @media (max-width: 575.98px) {
