@@ -9,6 +9,21 @@ body {
   background-color: #f9f9f9;
   padding-top: 80px;
 }
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 10px;
+  background: var(--primary-dark);
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  z-index: 9999;
+  text-decoration: none;
+}
+.skip-link:focus {
+  left: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.2);
+}
 
 /* ---------- HERO ---------- */
 .hero {
