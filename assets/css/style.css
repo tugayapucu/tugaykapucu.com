@@ -226,6 +226,10 @@ img.rounded-circle { border: 5px solid #fff; box-shadow: 0 6px 20px rgba(0,0,0,.
 
 /* Small screens: tighten spacing a bit */
 @media (max-width: 575.98px){
+  section { padding: 42px 0; }
+  .hero { padding-top: 90px; padding-bottom: 60px; }
+  .hero .hero-illustration { margin-left: 0; max-height: 360px; }
   .contact-icons{ gap:16px; }
   .ci-btn{ flex:1 1 100%; }
+  .ability-logo{ width:42px !important; height:52px !important; }
 }
