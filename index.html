@@ -301,6 +301,33 @@
           </div>
         </a>
       </div>
+
+      <div class="contact-form-card" data-aos="fade-up">
+        <h3 class="h5 fw-semibold mb-3">Send me a message</h3>
+        <!-- Replace the Formspree URL with your endpoint -->
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="_replyto" required placeholder="you@example.com">
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Tell me about your project or question"></textarea>
+          </div>
+          <div class="col-12 d-flex align-items-center gap-3">
+            <input type="checkbox" class="form-check-input" id="copy" name="copy" value="true">
+            <label class="form-check-label" for="copy">Send me a copy</label>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+          <input type="hidden" name="_subject" value="New message from tugaykapucu.com">
+        </form>
+      </div>
     </div>
   </section>
 

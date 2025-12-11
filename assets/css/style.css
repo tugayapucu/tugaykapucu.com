@@ -243,6 +243,19 @@ img.rounded-circle { border: 5px solid #fff; box-shadow: 0 6px 20px rgba(0,0,0,.
   color:var(--accent);
 }
 
+.contact-form-card{
+  margin-top:32px;
+  background:#fff;
+  border:1px solid rgba(2,6,23,.08);
+  border-radius:16px;
+  padding:20px 24px;
+  box-shadow:0 10px 30px rgba(2,6,23,.04), 0 2px 6px rgba(2,6,23,.06);
+}
+.contact-form-card .form-label{
+  font-weight:600;
+  color:#0f172a;
+}
+
 /* Small screens: tighten spacing a bit */
 @media (max-width: 575.98px){
   section { padding: 42px 0; }
