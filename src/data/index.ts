@@ -1,12 +1,12 @@
 export const personalInfo = {
   name: "Tugay Kapucu",
   title: "Software Engineer",
-  headline: "Full-stack software engineer building polished web products and reliable systems.",
+  headline: "Software engineer who bridges technical depth with business outcomes.",
   tagline:
-    "I design React and Next.js interfaces, build practical Node.js and Python backends, and ship internal tools that help teams move faster.",
+    "I build full-stack products, internal platforms, and data systems that real teams rely on — with a focus on delivery, reliability, and measurable impact.",
   summary:
-    "My work spans product-facing web experiences, APIs, analytics tooling, and embedded Linux platforms. I care about clean architecture, strong execution, and software that holds up in production.",
-  availability: "Open to software engineering opportunities",
+    "Software engineer with a background spanning product-facing web applications, REST APIs, analytics tooling, and embedded Linux platforms. I care about shipping software that actually solves problems — clean architecture, strong execution, and systems that hold up in production.",
+  availability: "Open to new opportunities",
   email: "tugayapucu@gmail.com",
   phone: "+90 543 517 86 68",
   location: "Istanbul, Türkiye",
@@ -14,13 +14,6 @@ export const personalInfo = {
   github: "https://github.com/tugayapucu",
   formspreeId: "xnjajzgj",
 };
-
-export const focusAreas = [
-  "React / Next.js frontends",
-  "Node.js and REST APIs",
-  "Python automation and tooling",
-  "Data products and dashboards",
-];
 
 export const skills = [
   {
