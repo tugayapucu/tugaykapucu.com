@@ -20,7 +20,7 @@ export default function AboutSection() {
             About
           </p>
           <h2 className="text-4xl font-bold tracking-tight text-[var(--color-text)] sm:text-5xl">
-            Product-minded, systems-aware, and delivery focused
+            Engineering that serves the business
           </h2>
         </motion.div>
 
@@ -31,37 +31,28 @@ export default function AboutSection() {
             className="space-y-5 lg:col-span-3"
           >
             <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
-              I&apos;m a software engineer based in Istanbul with a background
-              that blends{" "}
+              I&apos;m a software engineer based in Istanbul. I work across the
+              full stack — web products, APIs, internal tooling, and embedded
+              systems — and I approach every project with the same question:{" "}
               <span className="font-medium text-[var(--color-text)]">
-                product-oriented web development
+                what outcome does this need to deliver?
               </span>
-              , APIs, analytics tooling, and low-level systems work. That mix
-              helps me move comfortably between user experience, backend
-              delivery, and technical performance.
             </p>
             <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
-              My strongest web stack is{" "}
+              That mindset comes from my double degree in{" "}
               <span className="font-medium text-[var(--color-text)]">
-                React, Next.js, TypeScript, Node.js, and REST APIs
-              </span>
-              . I also bring hands-on experience with Python, SQL, analytics,
-              and Linux-based engineering workflows.
+                Management Engineering and Computer Engineering
+              </span>{" "}
+              at Istanbul Technical University — training that built both the
+              technical skill and the business judgment to understand what
+              software is actually for.
             </p>
             <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
-              I hold double bachelor&apos;s degrees in{" "}
-              <span className="font-medium text-[var(--color-text)]">
-                Management Engineering
-              </span>{" "}
-              and{" "}
-              <span className="font-medium text-[var(--color-text)]">
-                Computer Engineering
-              </span>{" "}
-              from Istanbul Technical University, where I graduated ranked{" "}
-              <span className="font-semibold text-[var(--color-accent)]">
-                1st in class
-              </span>{" "}
-              in Management Engineering.
+              At{" "}
+              <span className="font-medium text-[var(--color-text)]">Siemens</span>,
+              I&apos;ve spent 2+ years building internal platforms that
+              engineering teams depend on — tools that have to be fast, correct,
+              and maintainable under real operational pressure.
             </p>
 
             <div className="grid grid-cols-3 gap-4 pt-4">

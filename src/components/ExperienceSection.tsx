@@ -19,11 +19,11 @@ export default function ExperienceSection() {
             Experience
           </p>
           <h2 className="text-4xl font-bold tracking-tight text-[var(--color-text)] sm:text-5xl">
-            Experience with real operational weight
+            Where I&apos;ve delivered
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-[var(--color-text-muted)]">
-            I&apos;ve worked across enterprise engineering, internal platforms,
-            analytics workflows, and operational web systems.
+            Enterprise engineering, internal platforms, and data workflows — in
+            environments where software has to work reliably at scale.
           </p>
         </motion.div>
 

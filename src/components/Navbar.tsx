@@ -57,7 +57,7 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-[var(--color-border)] bg-[rgba(244,239,230,0.92)] shadow-[0_18px_50px_rgba(20,26,37,0.08)] backdrop-blur-md"
+          ? "border-b border-[var(--color-border)] bg-[rgba(248,250,252,0.92)] shadow-[0_18px_50px_rgba(20,26,37,0.08)] backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
@@ -110,7 +110,7 @@ export default function Navbar() {
       </nav>
 
       {mobileOpen && (
-        <div className="flex flex-col gap-1 border-b border-[var(--color-border)] bg-[rgba(244,239,230,0.96)] px-6 py-4 backdrop-blur-md md:hidden">
+        <div className="flex flex-col gap-1 border-b border-[var(--color-border)] bg-[rgba(248,250,252,0.96)] px-6 py-4 backdrop-blur-md md:hidden">
           {navLinks.map((link) => (
             <button
               key={link.href}

@@ -18,11 +18,11 @@ export default function ProjectsSection() {
             Selected Work
           </p>
           <h2 className="text-4xl font-bold tracking-tight text-[var(--color-text)] sm:text-5xl">
-            Work that shows how I build
+            Shipped with measurable results
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-[var(--color-text-muted)]">
-            A few representative pieces of work across internal platforms,
-            analytics tooling, and delivery-focused web systems.
+            Representative work across internal platforms, analytics tooling,
+            and operational web systems — each with a concrete business outcome.
           </p>
         </motion.div>
 

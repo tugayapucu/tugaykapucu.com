@@ -64,12 +64,12 @@ export default function ContactSection() {
             Contact
           </p>
           <h2 className="text-4xl font-bold tracking-tight text-[var(--color-text)] sm:text-5xl">
-            Hiring for frontend, full-stack, or platform work?
+            Let&apos;s talk about what you&apos;re building
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[var(--color-text-muted)]">
-            If you&apos;re building product experiences, internal platforms, or
-            engineering tools, I&apos;d be glad to talk. The form works, and
-            direct email is always fine too.
+            Whether it&apos;s a product role, an engineering position, or a
+            specific project — if there&apos;s a real problem to solve, I want
+            to hear about it.
           </p>
         </motion.div>
 
