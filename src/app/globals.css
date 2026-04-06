@@ -14,49 +14,46 @@
 }
 
 :root {
-  --color-bg: #f4efe6;
-  --color-surface: rgba(255, 250, 242, 0.82);
-  --color-surface-strong: #efe4d4;
-  --color-border: #d8cdbd;
-  --color-accent: #0f766e;
-  --color-accent-strong: #0a5d56;
-  --color-highlight: #c86b2a;
-  --color-text: #1b2432;
-  --color-text-muted: #5f6b7b;
+  --color-bg:            #F8FAFC;
+  --color-surface:       #FFFFFF;
+  --color-surface-strong:#F1F5F9;
+  --color-border:        #E2E8F0;
+
+  --color-accent:        #2563EB;
+  --color-accent-strong: #1D4ED8;
+  --color-highlight:     #7C3AED;
+
+  --color-text:          #0F172A;
+  --color-text-muted:    #64748B;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   background-color: var(--color-bg);
-  background-image:
-    radial-gradient(circle at top left, rgba(15, 118, 110, 0.08), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(200, 107, 42, 0.08), transparent 24%);
   color: var(--color-text);
   font-family: var(--font-sora), system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
+/* Dot grid — used in hero */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
-::-webkit-scrollbar-track {
-  background: #ede7dd;
+/* Light dot grid — used in light sections if needed */
+.dot-grid-light {
+  background-image: radial-gradient(circle, #CBD5E1 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #c9bcab;
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-accent);
-}
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-accent); }
 
 ::selection {
-  background: rgba(15, 118, 110, 0.18);
+  background: rgba(37, 99, 235, 0.12);
   color: var(--color-accent-strong);
 }
