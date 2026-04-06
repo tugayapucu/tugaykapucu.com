@@ -33,3 +33,5 @@ next-env.d.ts
 
 # Legacy HTML files (kept for reference only)
 _legacy/
+
+.claude/
