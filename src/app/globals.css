@@ -14,17 +14,18 @@
 }
 
 :root {
-  --color-bg:            #F8FAFC;
-  --color-surface:       #FFFFFF;
-  --color-surface-strong:#F1F5F9;
-  --color-border:        #E2E8F0;
+  --color-bg:             #080E1A;
+  --color-surface:        #0F1829;
+  --color-surface-strong: #1A2540;
 
-  --color-accent:        #2563EB;
-  --color-accent-strong: #1D4ED8;
-  --color-highlight:     #7C3AED;
+  --color-border:         #1E3A5F;
 
-  --color-text:          #0F172A;
-  --color-text-muted:    #64748B;
+  --color-accent:         #3B82F6;
+  --color-accent-strong:  #2563EB;
+  --color-highlight:      #A78BFA;
+
+  --color-text:           #F1F5F9;
+  --color-text-muted:     #94A3B8;
 }
 
 html { scroll-behavior: smooth; }
@@ -36,24 +37,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Dot grid — used in hero */
+/* Dot grid overlay */
 .dot-grid {
-  background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px);
-  background-size: 28px 28px;
-}
-
-/* Light dot grid — used in light sections if needed */
-.dot-grid-light {
-  background-image: radial-gradient(circle, #CBD5E1 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.10) 1px, transparent 1px);
   background-size: 28px 28px;
 }
 
 ::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--color-bg); }
-::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #1E3A5F; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-accent); }
 
 ::selection {
-  background: rgba(37, 99, 235, 0.12);
-  color: var(--color-accent-strong);
+  background: rgba(59, 130, 246, 0.2);
+  color: #93C5FD;
 }

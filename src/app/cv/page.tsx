@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function CVPage() {
   return (
     <div className="min-h-screen bg-[var(--color-bg)]">
-      <div className="no-print sticky top-0 z-10 flex items-center justify-between border-b border-[var(--color-border)] bg-[rgba(248,250,252,0.92)] px-6 py-3 backdrop-blur-md">
+      <div className="no-print sticky top-0 z-10 flex items-center justify-between border-b border-[var(--color-border)] bg-[rgba(8,14,26,0.92)] px-6 py-3 backdrop-blur-md">
         <Link
           href="/"
           className="text-sm text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
