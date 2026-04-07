@@ -5,8 +5,12 @@ import { skills } from "@/data";
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-24 lg:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="skills" className="relative overflow-hidden py-24 lg:py-32">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute left-1/2 top-0 h-72 w-[600px] -translate-x-1/2 rounded-full bg-[rgba(37,99,235,0.07)] blur-[100px]" />
+        <div className="absolute -right-20 bottom-8 h-60 w-60 rounded-full bg-[rgba(124,58,237,0.08)] blur-[70px]" />
+      </div>
+      <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +42,7 @@ export default function SkillsSection() {
                 delay: index * 0.07,
                 ease: "easeOut" as const,
               }}
-              className="group rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[0_18px_60px_rgba(29,39,53,0.08)] transition-all hover:border-[var(--color-accent)]"
+              className="group rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.35)] transition-all hover:border-[var(--color-accent)]"
             >
               <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-text)] transition-colors group-hover:text-[var(--color-accent)]">
                 {group.category}

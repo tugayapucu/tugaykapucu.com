@@ -5,8 +5,12 @@ import { featuredWork } from "@/data";
 
 export default function ProjectsSection() {
   return (
-    <section id="work" className="py-24 lg:py-32">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="work" className="relative overflow-hidden py-24 lg:py-32">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-24 top-16 h-80 w-80 rounded-full bg-[rgba(124,58,237,0.10)] blur-[90px]" />
+        <div className="absolute -right-16 bottom-0 h-64 w-64 rounded-full bg-[rgba(37,99,235,0.08)] blur-[80px]" />
+      </div>
+      <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +42,7 @@ export default function ProjectsSection() {
                 delay: index * 0.08,
                 ease: "easeOut" as const,
               }}
-              className="rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-7 shadow-[0_18px_60px_rgba(29,39,53,0.08)]"
+              className="rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-7 shadow-[0_4px_24px_rgba(0,0,0,0.35)]"
             >
               <div className="mb-6 flex items-center justify-between gap-3">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-accent)] text-sm font-semibold text-[var(--color-bg)]">

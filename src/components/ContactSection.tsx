@@ -51,8 +51,12 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 lg:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="contact" className="relative overflow-hidden py-24 lg:py-32">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-24 top-8 h-80 w-80 rounded-full bg-[rgba(37,99,235,0.10)] blur-[90px]" />
+        <div className="absolute -bottom-16 right-0 h-72 w-72 rounded-full bg-[rgba(124,58,237,0.09)] blur-[90px]" />
+      </div>
+      <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -108,7 +112,7 @@ export default function ContactSection() {
               },
             ].map((item) => {
               const content = (
-                <div className="group flex items-center gap-4 rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[0_18px_60px_rgba(29,39,53,0.08)] transition-all hover:border-[var(--color-accent)]">
+                <div className="group flex items-center gap-4 rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[0_4px_24px_rgba(0,0,0,0.35)] transition-all hover:border-[var(--color-accent)]">
                   <span className="rounded-2xl bg-[var(--color-surface-strong)] p-2 text-[var(--color-accent)]">
                     {item.icon}
                   </span>
@@ -146,7 +150,7 @@ export default function ContactSection() {
             className="lg:col-span-3"
           >
             {status === "sent" ? (
-              <div className="flex h-full min-h-64 flex-col items-center justify-center gap-4 rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-12 text-center shadow-[0_18px_60px_rgba(29,39,53,0.08)]">
+              <div className="flex h-full min-h-64 flex-col items-center justify-center gap-4 rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-12 text-center shadow-[0_4px_24px_rgba(0,0,0,0.35)]">
                 <CheckCircle className="text-[var(--color-accent)]" size={48} />
                 <h3 className="text-xl font-semibold text-[var(--color-text)]">
                   Message sent
@@ -164,7 +168,7 @@ export default function ContactSection() {
             ) : (
               <form
                 onSubmit={handleSubmit}
-                className="space-y-5 rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[0_18px_60px_rgba(29,39,53,0.08)] sm:p-8"
+                className="space-y-5 rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.35)] sm:p-8"
               >
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>

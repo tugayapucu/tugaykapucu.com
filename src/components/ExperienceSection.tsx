@@ -6,8 +6,12 @@ import { experience } from "@/data";
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-24 lg:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="experience" className="relative overflow-hidden py-24 lg:py-32">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -right-20 top-12 h-96 w-96 rounded-full bg-[rgba(124,58,237,0.09)] blur-[100px]" />
+        <div className="absolute -left-16 bottom-24 h-64 w-64 rounded-full bg-[rgba(37,99,235,0.07)] blur-[80px]" />
+      </div>
+      <div className="relative mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +48,7 @@ export default function ExperienceSection() {
                 }}
                 className="relative pl-16 md:pl-20"
               >
-                <div className="absolute left-0 top-5 z-10 flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_18px_60px_rgba(29,39,53,0.08)] md:left-2">
+                <div className="absolute left-0 top-5 z-10 flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_4px_24px_rgba(0,0,0,0.35)] md:left-2">
                   <Image
                     src={job.logo}
                     alt={job.company}
@@ -55,7 +59,7 @@ export default function ExperienceSection() {
                   />
                 </div>
 
-                <div className="rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[0_18px_60px_rgba(29,39,53,0.08)] transition-all hover:border-[var(--color-accent)]">
+                <div className="rounded-[1.75rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 shadow-[0_4px_24px_rgba(0,0,0,0.35)] transition-all hover:border-[var(--color-accent)]">
                   <div className="mb-4 flex flex-wrap items-start justify-between gap-2">
                     <div>
                       <h3 className="text-lg font-semibold leading-snug text-[var(--color-text)]">

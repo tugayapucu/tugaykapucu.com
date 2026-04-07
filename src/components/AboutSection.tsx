@@ -13,8 +13,12 @@ const fadeUp = {
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 lg:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="about" className="relative overflow-hidden py-24 lg:py-32">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -right-32 top-0 h-96 w-96 rounded-full bg-[rgba(37,99,235,0.10)] blur-[90px]" />
+        <div className="absolute -left-16 bottom-0 h-72 w-72 rounded-full bg-[rgba(124,58,237,0.08)] blur-[80px]" />
+      </div>
+      <div className="relative mx-auto max-w-6xl px-6">
         <motion.div {...fadeUp} className="mb-16">
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[var(--color-accent)]">
             About
@@ -63,7 +67,7 @@ export default function AboutSection() {
               ].map((stat) => (
                 <div
                   key={stat.label}
-                  className="rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 text-center shadow-[0_18px_60px_rgba(29,39,53,0.08)]"
+                  className="rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 text-center shadow-[0_4px_24px_rgba(0,0,0,0.35)]"
                 >
                   <p className="text-2xl font-bold text-[var(--color-accent)]">
                     {stat.value}
@@ -87,7 +91,7 @@ export default function AboutSection() {
             {education.map((edu) => (
               <div
                 key={`${edu.institution}-${edu.degree}`}
-                className="flex gap-4 rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[0_18px_60px_rgba(29,39,53,0.08)] transition-colors hover:border-[var(--color-accent)]"
+                className="flex gap-4 rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[0_4px_24px_rgba(0,0,0,0.35)] transition-colors hover:border-[var(--color-accent)]"
               >
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[var(--color-surface-strong)]">
                   <Image
