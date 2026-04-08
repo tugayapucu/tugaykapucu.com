@@ -183,6 +183,7 @@ export default function ContactSection() {
                       required
                       placeholder="Your name"
                       className="w-full rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-4 py-3 text-sm text-[var(--color-text)] outline-none transition-all placeholder:text-[#7a8695] focus:border-[var(--color-accent)] focus:bg-[#1A2540]"
+                      suppressHydrationWarning
                     />
                   </div>
                   <div>
@@ -197,6 +198,7 @@ export default function ContactSection() {
                       required
                       placeholder="your@email.com"
                       className="w-full rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-4 py-3 text-sm text-[var(--color-text)] outline-none transition-all placeholder:text-[#7a8695] focus:border-[var(--color-accent)] focus:bg-[#1A2540]"
+                      suppressHydrationWarning
                     />
                   </div>
                 </div>
@@ -212,6 +214,7 @@ export default function ContactSection() {
                     rows={5}
                     placeholder="What's on your mind?"
                     className="w-full resize-none rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-4 py-3 text-sm text-[var(--color-text)] outline-none transition-all placeholder:text-[#7a8695] focus:border-[var(--color-accent)] focus:bg-[#1A2540]"
+                    suppressHydrationWarning
                   />
                 </div>
                 {status === "error" && (
