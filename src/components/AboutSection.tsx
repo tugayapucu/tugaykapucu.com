@@ -54,7 +54,7 @@ export default function AboutSection() {
             <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
               At{" "}
               <span className="font-medium text-[var(--color-text)]">Siemens</span>,
-              I&apos;ve spent 2+ years building internal platforms that
+              I&apos;ve spent 3+ years building internal platforms that
               engineering teams depend on — tools that have to be fast, correct,
               and maintainable under real operational pressure.
             </p>
@@ -93,12 +93,12 @@ export default function AboutSection() {
                 key={`${edu.institution}-${edu.degree}`}
                 className="flex gap-4 rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[0_4px_24px_rgba(0,0,0,0.35)] transition-colors hover:border-[var(--color-accent)]"
               >
-                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-[var(--color-surface-strong)]">
+                <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white p-2">
                   <Image
                     src={edu.logo}
                     alt={edu.institution}
-                    width={36}
-                    height={36}
+                    width={52}
+                    height={52}
                     className="object-contain"
                   />
                 </div>

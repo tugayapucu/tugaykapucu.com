@@ -109,7 +109,7 @@ export const education = [
     institution: "Robert College of Istanbul",
     degree: "High School Diploma",
     period: "Sept 2012 – June 2017",
-    detail: "GPA: 98.58 / 100 · Captain of Football & Running Teams",
+    detail: "GPA: 89.58 / 100 · Captain of Football & Running Teams",
     logo: "/robert_logo.png",
   },
 ];

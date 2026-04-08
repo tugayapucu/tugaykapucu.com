@@ -157,7 +157,7 @@ export default function HeroSection() {
 
               {/* Floating stat — bottom left */}
               <div className="absolute -bottom-5 -left-5 rounded-2xl border border-white/10 bg-[#0F1829]/90 px-4 py-3 shadow-2xl backdrop-blur-md">
-                <p className="text-sm font-bold text-[#60A5FA]">2+ Years</p>
+                <p className="text-sm font-bold text-[#60A5FA]">3+ Years</p>
                 <p className="text-xs text-white/40">Shipping at Siemens</p>
               </div>
 
