@@ -61,7 +61,7 @@ export default function AboutSection() {
 
             <div className="grid grid-cols-3 gap-4 pt-4">
               {[
-                { value: "2+", label: "Years at Siemens" },
+                { value: "3+", label: "Years at Siemens" },
                 { value: "3.89", label: "University GPA" },
                 { value: "#1", label: "Class Rank" },
               ].map((stat) => (
