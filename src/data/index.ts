@@ -73,7 +73,7 @@ export const experience = [
     role: "Marketing Intern",
     period: "Aug 2021",
     location: "Istanbul, Türkiye",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Arçelik_logo.svg/200px-Arçelik_logo.svg.png",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ar%C3%A7elik_logo.svg/200px-Ar%C3%A7elik_logo.svg.png",
     bullets: [
       "Contributed to post-pandemic marketing strategy and market research initiatives.",
     ],
@@ -83,7 +83,7 @@ export const experience = [
     role: "Production Planning Intern",
     period: "Aug 2020",
     location: "Eskişehir, Türkiye",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Eti_logo.png/200px-Eti_logo.png",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Eti_logo.png/200px-Eti_logo.png",
     bullets: [
       "Observed and documented production machinery workflows and operational planning processes.",
     ],
