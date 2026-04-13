@@ -158,13 +158,13 @@ export default function HeroSection() {
               {/* Floating stat — bottom left */}
               <div className="absolute -bottom-5 -left-5 rounded-2xl border border-white/10 bg-[#0F1829]/90 px-4 py-3 shadow-2xl backdrop-blur-md">
                 <p className="text-sm font-bold text-[#60A5FA]">3+ Years</p>
-                <p className="text-xs text-white/40">Shipping at Siemens</p>
+                <p className="text-xs text-white/40">Engineering at Siemens</p>
               </div>
 
               {/* Floating stat — top right */}
               <div className="absolute -right-5 -top-5 rounded-2xl border border-white/10 bg-[#0F1829]/90 px-4 py-3 shadow-2xl backdrop-blur-md">
-                <p className="text-sm font-bold text-[#A78BFA]">3.89 GPA</p>
-                <p className="text-xs text-white/40">Ranked #1</p>
+                <p className="text-sm font-bold text-[#A78BFA]">Full Stack</p>
+                <p className="text-xs text-white/40">Web &amp; Systems</p>
               </div>
             </div>
           </motion.div>
