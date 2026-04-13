@@ -145,11 +145,11 @@ export default function HeroSection() {
               <div className="relative rounded-[2rem] bg-gradient-to-br from-[#2563EB]/60 via-white/10 to-[#7C3AED]/40 p-[1.5px]">
                 <div className="overflow-hidden rounded-[2rem] bg-[#0F1829]">
                   <Image
-                    src="/avatar.jpeg"
+                    src="/hero.jpeg"
                     alt="Tugay Kapucu"
                     width={380}
-                    height={380}
-                    className="h-72 w-72 object-cover sm:h-80 sm:w-80 lg:h-[400px] lg:w-[400px]"
+                    height={507}
+                    className="h-72 w-72 object-cover object-[center_18%] sm:h-80 sm:w-80 lg:h-[400px] lg:w-[400px]"
                     priority
                   />
                 </div>
