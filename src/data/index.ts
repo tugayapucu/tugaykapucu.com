@@ -127,22 +127,30 @@ export const projects = [
   {
     title: "Ginny The Bartender",
     period: "June 2025",
+    description:
+      "A full stack cocktail discovery app with user authentication, personalized favorites, and a fully containerized deployment. Built end to end — from database schema to REST API to React UI.",
     bullets: [
-      "Built a responsive React frontend with protected routes, dynamic browsing, and a polished UI using Tailwind CSS.",
-      "Developed a full stack cocktail discovery platform with JWT authentication and personalized favorites.",
-      "Designed RESTful APIs with FastAPI for cocktail search, authentication, and favorites management.",
-      "Implemented database architecture using SQLAlchemy ORM, PostgreSQL, and Alembic migrations.",
-      "Containerized the application with Docker Compose for consistent local development and deployment.",
+      "Designed RESTful APIs with FastAPI covering cocktail search, authentication, and favorites management.",
+      "Implemented JWT authentication with protected routes on both the API and the React frontend.",
+      "Set up database architecture using SQLAlchemy ORM, PostgreSQL, and Alembic for schema migrations.",
+      "Containerized the full stack with Docker Compose for consistent local development and deployment.",
+      "Built a responsive React frontend with dynamic browsing and a polished UI using Tailwind CSS.",
     ],
-    stack: ["React", "FastAPI", "PostgreSQL", "Docker", "Tailwind CSS", "JWT"],
+    stack: ["React", "FastAPI", "PostgreSQL", "Docker", "Tailwind CSS", "JWT", "SQLAlchemy", "Alembic"],
+    github: "https://github.com/tugayapucu/ginny-the-bartender",
   },
   {
     title: "Personal Portfolio Website",
     period: "Jan 2026",
+    description:
+      "This website — designed and built from scratch with a focus on clean typography, dark theme, and smooth animations.",
     bullets: [
-      "Designed and built a professional portfolio website using Next.js, TypeScript, Tailwind CSS, and Framer Motion.",
+      "Built with Next.js App Router, TypeScript, and Tailwind CSS v4.",
+      "Scroll-triggered animations using Framer Motion throughout every section.",
+      "Includes a print-ready CV page and a contact form.",
     ],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/tugayapucu/tugaykapucu.com",
   },
 ];
 
