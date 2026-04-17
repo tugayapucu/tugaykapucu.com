@@ -172,10 +172,14 @@ export default function ContactSection() {
               >
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label className="mb-2 block text-xs font-medium uppercase tracking-[0.16em] text-[var(--color-text-muted)]">
+                    <label
+                      htmlFor="contact-name"
+                      className="mb-2 block text-xs font-medium uppercase tracking-[0.16em] text-[var(--color-text-muted)]"
+                    >
                       Name
                     </label>
                     <input
+                      id="contact-name"
                       type="text"
                       name="name"
                       value={form.name}
@@ -187,10 +191,14 @@ export default function ContactSection() {
                     />
                   </div>
                   <div>
-                    <label className="mb-2 block text-xs font-medium uppercase tracking-[0.16em] text-[var(--color-text-muted)]">
+                    <label
+                      htmlFor="contact-email"
+                      className="mb-2 block text-xs font-medium uppercase tracking-[0.16em] text-[var(--color-text-muted)]"
+                    >
                       Email
                     </label>
                     <input
+                      id="contact-email"
                       type="email"
                       name="email"
                       value={form.email}
@@ -203,10 +211,14 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div>
-                  <label className="mb-2 block text-xs font-medium uppercase tracking-[0.16em] text-[var(--color-text-muted)]">
+                  <label
+                    htmlFor="contact-message"
+                    className="mb-2 block text-xs font-medium uppercase tracking-[0.16em] text-[var(--color-text-muted)]"
+                  >
                     Message
                   </label>
                   <textarea
+                    id="contact-message"
                     name="message"
                     value={form.message}
                     onChange={handleChange}
