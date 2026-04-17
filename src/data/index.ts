@@ -48,7 +48,7 @@ export const experience = [
     role: "Software Developer",
     period: "Jan 2023 – Present",
     location: "Istanbul, Türkiye",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Siemens-logo.svg/200px-Siemens-logo.svg.png",
+    logo: "/siemens_logo.png",
     bullets: [
       "Owned integration acceptance for incoming IndOS/OS component deliveries; approved or rejected releases based on performance regressions, missing features, and functional/quality defects, providing evidence (repro steps, logs, traces) to drive fixes.",
       "Built an automation tool to streamline integration between Industrial OS and firmware, reducing manual effort and preventing integration mistakes during delivery and validation cycles.",
@@ -63,7 +63,7 @@ export const experience = [
     role: "Marketing Technology & InfoSec Intern",
     period: "Jan 2022 – Oct 2022",
     location: "Istanbul, Türkiye",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Procter_%26_Gamble_logo.svg/200px-Procter_%26_Gamble_logo.svg.png",
+    logo: "/pg_logo.png",
     bullets: [
       "Designed and operated the data collection and live transfer workflow for the Head & Shoulders Number One Music Awards campaign.",
       "Built a lightweight registration and data capture webpage, stored participant data in a Google Cloud database, and automated email reporting to share campaign results with stakeholders.",
@@ -76,7 +76,7 @@ export const experience = [
     role: "Marketing Intern",
     period: "Aug 2021 – Sept 2021",
     location: "Istanbul, Türkiye",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ar%C3%A7elik_logo.svg/200px-Ar%C3%A7elik_logo.svg.png",
+    logo: "/arcelik_logo.jpg",
     bullets: [
       "Contributed to marketing strategy project work for a consumer product line.",
     ],
@@ -86,7 +86,7 @@ export const experience = [
     role: "Production Planning Intern",
     period: "Aug 2020 – Sept 2020",
     location: "Remote",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Eti_logo.png/200px-Eti_logo.png",
+    logo: "/eti_logo.jpg",
     bullets: [
       "Observed production planning stages of industrial machinery manufacturing and operational workflows.",
     ],
