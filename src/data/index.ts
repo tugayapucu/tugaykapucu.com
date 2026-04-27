@@ -125,6 +125,22 @@ export const languages = [
 
 export const projects = [
   {
+    title: "Akçal Zeytinyağı Fabrikası",
+    period: "2025",
+    tag: "Freelance",
+    description:
+      "Company website for a family-run olive oil factory operating since 1962 in Silifke, Turkey. Handled both visual design and full implementation.",
+    bullets: [
+      "Designed and built a 10-section single-page React app covering brand story, production process, product range, and quality standards.",
+      "Implemented scroll reveal animations, parallax effects, animated counters, and a continuous marquee for a polished user experience.",
+      "Created a custom design system with a warm organic palette (olive, terra, cream) and Fraunces serif typography.",
+      "Used Python and Pillow for product image background removal for seamless visual integration.",
+      "Delivered a fully responsive Turkish-language site.",
+    ],
+    stack: ["React", "Vite", "CSS", "Python", "Pillow"],
+    github: "",
+  },
+  {
     title: "Ginny The Bartender",
     period: "June 2025",
     description:

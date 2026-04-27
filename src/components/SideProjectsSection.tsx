@@ -21,14 +21,14 @@ export default function SideProjectsSection() {
           className="mb-16 max-w-3xl"
         >
           <p className="mb-3 text-sm font-semibold uppercase tracking-[0.28em] text-[var(--color-accent)]">
-            Personal Projects
+            Projects
           </p>
           <h2 className="text-4xl font-bold tracking-tight text-[var(--color-text)] sm:text-5xl">
             Built outside of work
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-[var(--color-text-muted)]">
-            Side projects I ship to explore new technologies and practice building
-            things end to end — from database to UI.
+            Freelance work and side projects — things I build to solve real problems
+            or explore new technologies end to end.
           </p>
         </motion.div>
 
@@ -48,9 +48,16 @@ export default function SideProjectsSection() {
               {/* Header */}
               <div className="mb-4 flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-bold text-[var(--color-text)]">
-                    {project.title}
-                  </h3>
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-xl font-bold text-[var(--color-text)]">
+                      {project.title}
+                    </h3>
+                    {project.tag && (
+                      <span className="rounded-full border border-[var(--color-highlight)]/30 bg-[var(--color-highlight)]/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-[var(--color-highlight)]">
+                        {project.tag}
+                      </span>
+                    )}
+                  </div>
                   <span className="mt-1 inline-block text-xs text-[var(--color-text-muted)]">
                     {project.period}
                   </span>
