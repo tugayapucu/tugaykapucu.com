@@ -32,7 +32,7 @@ export default function SideProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-3">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
