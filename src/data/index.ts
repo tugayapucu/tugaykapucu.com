@@ -3,9 +3,9 @@ export const personalInfo = {
   title: "Software Engineer",
   headline: "Software engineer who bridges technical depth with business outcomes.",
   tagline:
-    "I build full stack products, internal platforms, and data systems that real teams rely on — with a focus on delivery, reliability, and measurable impact.",
+    "I build full stack products, internal platforms, and data systems that real teams rely on. Delivery, reliability, and real impact are what I care about.",
   summary:
-    "Software engineer with a background spanning product focused web applications, REST APIs, analytics tooling, and embedded Linux platforms. I care about shipping software that actually solves problems — clean architecture, strong execution, and systems that hold up in production.",
+    "Software engineer with a background spanning product focused web applications, REST APIs, analytics tooling, and embedded Linux platforms. I care about shipping software that actually solves problems: clean architecture, strong execution, and systems that hold up in production.",
   availability: "Open to new opportunities",
   email: "tugayapucu@gmail.com",
   phone: "+90 543 517 86 68",
@@ -68,7 +68,7 @@ export const experience = [
       "Designed and operated the data collection and live transfer workflow for the Head & Shoulders Number One Music Awards campaign.",
       "Built a lightweight registration and data capture webpage, stored participant data in a Google Cloud database, and automated email reporting to share campaign results with stakeholders.",
       "Developed a personalized ad campaign targeting non-Fairy detergent users across the Banabak mobile app and social media channels.",
-      "Collaborated with the IT security team to scan employee computers across Turkey for risky applications and coordinated remediation communications to ensure removal.",
+      "Collaborated with the IT security team to scan employee computers across Turkey for risky applications and followed up directly to get them removed.",
     ],
   },
   {
@@ -78,7 +78,7 @@ export const experience = [
     location: "Istanbul, Türkiye",
     logo: "/arcelik_logo.jpg",
     bullets: [
-      "Contributed to marketing strategy project work for a consumer product line.",
+      "Worked on marketing strategy for a consumer product line.",
     ],
   },
   {
@@ -88,7 +88,7 @@ export const experience = [
     location: "Remote",
     logo: "/eti_logo.jpg",
     bullets: [
-      "Observed production planning stages of industrial machinery manufacturing and operational workflows.",
+      "Observed how production planning and operations are run at an industrial manufacturer, from scheduling to delivery coordination.",
     ],
   },
 ];
@@ -131,11 +131,11 @@ export const projects = [
     description:
       "Company website for a family-run olive oil factory operating since 1962 in Silifke, Turkey. Handled both visual design and full implementation.",
     bullets: [
-      "Designed and built a 10-section single-page React app covering brand story, production process, product range, and quality standards.",
-      "Implemented scroll reveal animations, parallax effects, animated counters, and a continuous marquee for a polished user experience.",
-      "Created a custom design system with a warm organic palette (olive, terra, cream) and Fraunces serif typography.",
-      "Used Python and Pillow for product image background removal for seamless visual integration.",
-      "Delivered a fully responsive Turkish-language site.",
+      "Designed and built a 10-section single page React app covering brand story, production process, product range, and quality standards.",
+      "Added scroll reveal animations, parallax effects, animated counters, and a continuous marquee.",
+      "Built a custom design system with a warm organic palette (olive, terra, cream) and Fraunces serif typography.",
+      "Used Python and Pillow to remove backgrounds from product images so they sit cleanly on the page.",
+      "Delivered a fully responsive site in Turkish.",
     ],
     stack: ["React", "Vite", "CSS", "Python", "Pillow"],
     github: "",
@@ -144,7 +144,7 @@ export const projects = [
     title: "Ginny The Bartender",
     period: "June 2025",
     description:
-      "A full stack cocktail discovery app with user authentication, personalized favorites, and a fully containerized deployment. Built end to end — from database schema to REST API to React UI.",
+      "A full stack cocktail discovery app with user authentication, personalized favorites, and a fully containerized deployment. Built end to end, from database schema to REST API to React UI.",
     bullets: [
       "Designed RESTful APIs with FastAPI covering cocktail search, authentication, and favorites management.",
       "Implemented JWT authentication with protected routes on both the API and the React frontend.",
@@ -159,11 +159,11 @@ export const projects = [
     title: "Personal Portfolio Website",
     period: "Jan 2026",
     description:
-      "This website — designed and built from scratch with a focus on clean typography, dark theme, and smooth animations.",
+      "Designed and built from scratch, with a focus on clean typography, dark theme, and smooth animations.",
     bullets: [
       "Built with Next.js App Router, TypeScript, and Tailwind CSS v4.",
-      "Scroll-triggered animations using Framer Motion throughout every section.",
-      "Includes a print-ready CV page and a contact form.",
+      "Scroll triggered animations using Framer Motion throughout every section.",
+      "Includes a print ready CV page and a contact form.",
     ],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/tugayapucu/tugaykapucu.com",
@@ -177,7 +177,7 @@ export const featuredWork = [
     summary:
       "Built internal tools and automation around industrial Linux integration workflows, helping engineers move faster in a complex systems environment.",
     outcome:
-      "Combined systems knowledge with product thinking to improve reliability and reduce friction for other developers.",
+      "Brought together systems knowledge and product thinking to make things more reliable and easier for other developers.",
     stack: ["Python", "Linux", "Automation", "Internal Tools"],
   },
   {
@@ -186,7 +186,7 @@ export const featuredWork = [
     summary:
       "Created a test-and-analytics workflow using SQLite and Apache Superset to turn low-level performance measurements into usable dashboards.",
     outcome:
-      "Supported optimization work that contributed to a 25% boot-time reduction and a 10% CPU-usage improvement.",
+      "Supported optimization work that contributed to a 25% boot time reduction and a 10% CPU usage improvement.",
     stack: ["SQLite", "Apache Superset", "Analytics", "Performance"],
   },
   {
